@@ -1,0 +1,16 @@
+{
+  "build": {
+    "core": "arduino",
+    "f_cpu": "4000000L",
+    "mcu": "atmega32a",
+    "variant": "standard"
+  },
+  "frameworks": [],
+  "name": "Hexapod Mark II Leg",
+  "upload": {
+    "maximum_ram_size": 2048,
+    "maximum_size": 32768
+  },
+  "url": "https://github.com/pavlenko",
+  "vendor": "Eugeniy Pavlenko"
+} 
