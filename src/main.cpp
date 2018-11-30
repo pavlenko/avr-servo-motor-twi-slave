@@ -67,7 +67,18 @@ int main() {
     // Global enable interrupts
     sei();
 
-    while (true) {}
+    while (true) {
+        if (commandsBufferIndex < commandsBufferLength) {
+            //TODO dispatch single command
+            Command_t command = commandsBufferData[commandsBufferIndex++];
+            if (command.mask) {
+                //TODO execute command depends on type
+            }
+        } else {
+            commandsBufferIndex  = 0;
+            commandsBufferLength = 0;
+        }
+    }
 }
 
 void twiOnReceive() {
